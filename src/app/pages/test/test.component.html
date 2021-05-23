@@ -1,0 +1,181 @@
+
+
+    <div style="display: 'flex'; justify-content: 'center   ';"class="row">
+        <div class="col-lg-6">
+          <nb-card>
+            <nb-card-header>Özgeçmişinizi Oluşturun</nb-card-header>
+            <nb-card-body>
+            
+              <input type="text" nbInput fullWidth id="cvname" name="cvname" [(ngModel)]="cvname" placeholder="ÖzgeçmişAdı">
+              <form 
+              [formGroup]="myform" (ngSubmit)="onSubmit()">
+            
+              <input type="text" nbInput fullWidth formControlName="adsoyad" placeholder="Ad soyad">
+              {{veri}}
+              <br><br><br>
+              İletişim Bilgileriniz
+
+              <br>
+              <br>
+             <div>  
+             1: <input type="text" nbInput style="width: 20%;" placeholder="+90">
+                <input type="text" nbInput  style="width: 75%;"formControlName="telefon"  placeholder="Telefon">
+            </div>
+            
+            <div>  
+                2: <input type="text" nbInput style="width: 80;"formControlName="mail" placeholder="Mail">
+                
+               </div>
+               
+            <br>
+            <br><br>
+
+            Özet Bilgi:
+            <br>
+            <div class="full-name-inputs">
+              <textarea rows="5" nbInput fullWidth formControlName="ozet" placeholder="Özet Bilgi"></textarea>
+              <br>
+              <br>
+              <textarea rows="5" nbInput fullWidth shape="round" formControlName="deneyim" placeholder="İş Deneyimleri"></textarea>
+              <br>
+              <textarea rows="5" nbInput fullWidth shape="round"formControlName="egitim"  placeholder="Eğitim Bilgileri"></textarea>
+       
+                <br>
+                <input type="text" nbInput fullWidth formControlName="yabancidil" placeholder="Yabancı Dil">
+                <br>
+                <input type="text" nbInput fullWidth formControlName="bilgisayar" placeholder="Bilgisayar Bilgileri">
+                <br>
+                <input type="text" rows="5" nbInput fullWidth formControlName="yetenekler" placeholder="Yetenekler">
+                <br>
+                <input type="text" nbInput fullWidth formControlName="projeler" placeholder="Projeler">
+                <br>
+                <input type="text" nbInput fullWidth formControlName="lorem" placeholder="Lorem">
+
+              </div>
+              <br>
+              <br>
+             
+              <br>
+              <br>
+               
+        <div align= "center">
+          <button (click)="btnclick()" type="submit" nbButton status="primary" style="width:300px;">Kaydet</button>
+             
+      </div>
+                       </form>
+            </nb-card-body>
+          </nb-card>
+        </div>
+        
+
+
+       
+
+<!--   good view-->
+
+
+
+<!--A
+
+    <div style="float: left;">
+        <div class= "col-sm-7 custom-row jumbotron">
+          
+          <form>
+              <fieldset>
+                <legend>SignUp</legend>
+                  
+                   Email input block -->
+
+                  <!--A
+                  <div class="form-group">
+                    <label class="col-lg-2
+                    control-label">Email</label>
+                    <div class="col-lg-7">
+                        <input type="text" class = "form-control" >
+                     </div>
+                     
+      
+                   Email error block -->
+      <!--A
+                      <div class="col-sm-3 text-danger">
+                           <div >
+                               Email field can't be blank
+                           </div>
+                           <div >
+                               The email id doesn't seem right
+                           </div>
+                       </div>
+                  </div>
+      
+                   Password block -->
+                 <!--A <div >
+                         <div class="form-group ">
+                            <label class="col-lg-2 	control-label">Password</label>
+                            <div class="col-lg-7">
+                                <input type="password">
+                             </div>
+                         </div>
+      
+                      <div class="form-group">
+                           <label for="confirmPassword" class="col-lg-2
+                    control-label" >Confirm Password</label>
+                              <div class="col-lg-7">
+                                <input type="password" class="form-control"
+                              >
+                         </div>
+                       </div>
+                     
+                   Password error block -->
+                <!--A      <div class="col-sm-3 text-danger">
+                       
+                           <div>
+                               Password needs to be more than 8 characters
+                           </div>
+                           <ng-template #nomatch >
+                               Passwords don't match
+                           </ng-template>
+                   
+                       </div>
+                  </div>				
+                  
+                  <br>
+                   Select Gender block -->
+     <!-- A             <div class="form-group">
+                    <label class="col-lg-2">Gender</label>
+                     <div class="col-lg-7">
+                      <select class="form-control">
+                        </select>
+                     </div>
+                  </div>
+                  
+                   Terms checkbox block -->
+      
+    <!-- A              <div class="form-group checkbox">
+                         <div class="col-lg-6 ">
+                          <input type="checkbox" > Confirm that you've read the Terms and Condition
+                      </div>
+                  
+      
+                   Terms checkbox error block -->
+   <!-- A                   <div class="col-lg-4 text-danger">
+                           You need to check this box to continue
+                      </div>
+                     </div>
+                 
+                  Buttons block -->
+   <!-- A               <div class="form-group ">
+                      <div class="col-lg-10 col-lg-offset-2">
+                          <button  class="btn btn-default">Cancel</button>
+                          <button class="btn btn-success" > Submit
+                          </button>
+                      </div>
+                  </div>
+      
+      
+              </fieldset>
+          </form>
+          
+        </div>
+      </div>
+
+    -->

@@ -1,0 +1,167 @@
+
+<h1>Cihazlarınıza ait  güncel bilgileri aşağıda bulabilirsiniz</h1>
+
+<div style="margin-right:20px;">
+  
+<mat-card style="padding-top: 0px; margin-top:0px;height: 600px;">
+    <div>
+        <b style="font-size: 25px;">Cihaz</b>
+        <b style="font-size: 25px;padding-left: 25px;">Son İletim Zamanı</b>
+        
+    </div>
+
+        <!--                                    gauge 1                           -->
+    
+
+<div style="float: left;margin-left: 350px;margin-top: 60px;">
+    <div style="padding-left: 15%;">
+    <div>
+    <b style="font-size: 20px;">Sensör 1</b>
+    </div>
+    <b style="font-size: 20px;">İsim:</b>
+    
+    <input type="text"
+    (keyup) = "textInput($event)"
+    style="height: 20px;width:100px;"
+    >
+    <div style="margin-bottom: 40px;">
+        <b style="font-size: 20px;">Min:</b>
+        <input type="text"
+        style="height: 20px;width:20px;"
+        >
+        
+        <b style="font-size: 20px;margin-left: 20px;">Max:</b>
+        <input type="text"
+        style="height: 20px;width:20px;"
+        >
+        </div>
+</div>
+
+<jqxGauge #myGauge
+          [value]="0" [colorScheme]="'scheme04'" [animationDuration]="1000"
+          [ranges]="ranges" [ticksMinor]="ticksMinor" [ticksMajor]="ticksMajor"
+          [labels]="labels" [style]="style" [caption]="caption" >
+          
+      </jqxGauge>
+     
+    </div>
+    <div *ngFor="sda">
+        <h2>sda{{testingen}}</h2>
+      </div>
+
+    
+    
+        <!--             
+<div style="position: absolute;margin-left: 100px;" >
+
+    <h2>test</h2>
+</div>                       gauge 2                           -->
+    
+
+    <div style="float: left;margin-top: 60px;">
+        <div style="padding-left: 15%;">
+        <div>
+        <b style="font-size: 20px;">Sensör 2</b>
+        </div>
+        <b style="font-size: 20px;">İsim:</b>
+        
+        <input type="text"
+        (keyup) = "textInput2($event)"
+        style="height: 20px;width:100px;"
+        >
+        <div style="margin-bottom: 40px;">
+            <b style="font-size: 20px;">Min:</b>
+            <input type="text"
+            style="height: 20px;width:20px;"
+            >
+            
+            <b style="font-size: 20px;margin-left: 20px;">Max:</b>
+            <input type="text"
+            style="height: 20px;width:20px;"
+            >
+            </div>
+    </div>
+        
+    <jqxGauge #myGauge2
+              [value]="0" [colorScheme]="'scheme04'" [animationDuration]="1000"
+              [ranges]="ranges" [ticksMinor]="ticksMinor" [ticksMajor]="ticksMajor"
+              [labels]="labels" [style]="style" [caption]="caption" >
+          </jqxGauge>
+        </div>
+        
+        <!--                                    gauge 3                           -->
+    
+    <div style="float: left;margin-top: 60px;">
+        <div style="padding-left: 15%;">
+        <div>
+        <b style="font-size: 20px;">Sensör 2</b>
+        </div>
+        <b style="font-size: 20px;">İsim:</b>
+        
+        <input type="text"
+        (keyup) = "textInput3($event)"
+        style="height: 20px;width:100px;"
+        >
+        <div style="margin-bottom: 40px;">
+            <b style="font-size: 20px;">Min:</b>
+            <input type="text"
+            style="height: 20px;width:20px;"
+            >
+            
+            <b style="font-size: 20px;margin-left: 20px;">Max:</b>
+            <input type="text"
+            style="height: 20px;width:20px;"
+            >
+            </div>
+    </div>
+    <jqxGauge></jqxGauge>
+    <jqxGauge #myGauge3
+              [value]="0" [colorScheme]="'scheme04'" [animationDuration]="1000"
+              [ranges]="ranges" [ticksMinor]="ticksMinor" [ticksMajor]="ticksMajor"
+              [labels]="labels" [style]="style" [caption]="caption" >
+          </jqxGauge>
+        </div>
+    
+        <!--                                    gauge 4                           -->
+    
+        <div style="float: left;margin-top: 60px;">
+            <div style="padding-left: 15%;">
+            <div>
+            <b style="font-size: 20px;">Nem</b>
+            </div>
+            <b style="font-size: 20px;">İsim:</b>
+            
+            <input type="text"
+            (keyup) = "textInput4($event)"
+            style="height: 20px;width:100px;"
+            >
+            <div style="margin-bottom: 40px;">
+                <b style="font-size: 20px;">Min:</b>
+                <input type="text"
+                style="height: 20px;width:20px;"
+                >
+                
+                <b style="font-size: 20px;margin-left: 20px;">Max:</b>
+                <input type="text"
+                style="height: 20px;width:20px;"
+                >
+                </div>
+        </div>
+            
+        <jqxGauge #myGauge4
+                  [value]="0" [colorScheme]="'scheme04'" [animationDuration]="1000"
+                  [ranges]="ranges" [ticksMinor]="ticksMinor" [ticksMajor]="ticksMajor"
+                  [labels]="labels" [style]="style" [caption]="caption" >
+              </jqxGauge>
+            </div>
+            <button style="height: 50px;width: 90px;margin-top: 80px;">Kaydet</button>
+        
+    
+</mat-card>
+ <!--  Second Gauge Container-->
+
+
+
+
+
+</div>
